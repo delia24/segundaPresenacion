@@ -1,0 +1,23 @@
+{%extends 'index.html'%}
+{% block titulo %} <h1>nuevo usuario</h1>{% endblock %}
+{% block encabezado %}<h1>registrar un nuevo usuario </h1>{% endblock%}
+{% block cuerpo %}
+
+
+<div class="row">
+		<div class="span4"></div>
+			<div class="span5">
+				<form id='formulario' method='post' action=''>
+					{% csrf_token%}
+					<table>
+						{{formulario}}
+					</table>
+					<p> <input type='submit' value='ingresar'> </p>
+				</form>
+			</div>
+		<div class="span3"></div>
+
+	</div>
+	 
+{% endblock%}
+

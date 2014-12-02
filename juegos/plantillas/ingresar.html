@@ -1,0 +1,28 @@
+{%extends 'index.html'%}
+
+{% block title %}
+	    <title>Ingresar al istema</title>
+{% endblock %}
+{% block cuerpo %}
+	<div class="row">
+		<div class="span4"></div>
+			<div class="span5">
+				<form id='formulario' method='post' action=''>
+					{% csrf_token%}
+					<table>
+						{{formulario}}
+					</table>
+					<div class="form-group">
+						<div class =-"col-sm-offset-2 col-sm-10">
+							{{formulario2.as_p}}
+						</div>
+					</div>
+					<p> <input type='submit' value='ingresar'> </p>
+				</form>
+			</div>
+		<!--<div class="span3"></div>
+	<li><a href="/">Inicio</a></li>-->
+
+	</div>
+	
+{% endblock %}
